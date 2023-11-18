@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            background-image: url(/All_Images/wall2.jpg);
+            /* background-size: cover; */
+        }
+
+        .main-container {
+            width: 300px;
+            /* height: 450px; */
+            margin: 5% 40%;
+            background-color: black;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 2px 2px 15px;
+        }
+
+        h1 {
+            color: cyan;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        label,
+        span {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .main-container div {
+            margin-bottom: 20px;
+        }
+
+        [type="text"],
+        [type="date"],
+        [type="email"],
+        select {
+            width: 180px;
+            font-size: 20px;
+            bottom: none;
+            outline: none;
+        }
+
+        button {
+            /* align:/ center; */
+            width: 180px;
+            height: 30px;
+            border: none;
+            outline: 0;
+            font-size: 20px;
+            background: linear-gradient(to left,#ff00cc,#ff0000);
+            cursor: pointer;
+            border-radius: 4px;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Registration Form</h1>
+        <form action="login_page.html">
+            <div>
+                <label for="name">Full Name:</label><span>*</span><br>
+                <input type="text" id="name" name="name" required autofocus><br>
+            </div>
+
+            <div>
+                <label for="phone">Contact Number:</label><span>*</span><br>
+                <input type="text" id="phone" name="phone" required maxlength="10"><br>
+            </div>
+
+            <div>
+                <label for="em">Emain Id:</label><span>*</span><br>
+                <input type="email" id="em" name="em" required><br>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required min="1990-01-01" max="2023-11-08"><br>
+            </div>
+
+            <div>
+                <label for="gen1">Gender:</label>
+                <label for="">Male</label>
+                <input type="radio" id="gen1" name="Gender" value="m">
+                <label for="">Female</label>
+                <input type="radio" id="gen2" name="Gender" value="f">
+                <label for="">Other</label>
+                <input type="radio" id="gen3" name="Gender" value="o">
+            </div>
+
+            <div>
+                <label for="pass">Which Course?</label>
+                <select name="course" id="course">
+                    <option value="C">C-language</option>
+                    <option value="C++">C++-language</option>
+                    <option value="core java">Core Java</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">Mode of Training</label>
+                <select name="mot" id="mot">
+                    <option value="classroom">Classromm Training</option>
+                    <option value="classroom">Online Training</option>
+                    <option value="classroom">Placement Training</option>
+                    <option value="classroom">Project Training</option>
+                    <option value="classroom">Weekend Training</option>
+                    <option value="classroom">Internship</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" name="tc" id="tc" value="true">
+                <label for="">I Accepted Term & Condition</label>
+            </div>
+
+            <div align="center">
+                <button type="submit" name="sb">Register Now</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
